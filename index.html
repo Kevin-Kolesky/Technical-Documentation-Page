@@ -9,51 +9,59 @@
 </head>
 
 <body>
-    <nav id="nav">
+    <nav id="navbar">
         <header>
             CSS Documentation
         </header>
         <ul class="nav-list">
             <li>
-                BLOOP
+                <a clas="nav-link" href="">What is CSS?</a>
             </li>
             <li>
-                BLAAB
+                <a clas="nav-link" href="">Anatomy of a CSS ruleset</a>
             </li>
             <li>
-                BLAAB
+                <a clas="nav-link" href="">Selector</a>
             </li>
             <li>
-                BLAAB
+                <a clas="nav-link" href="">Declaration</a>
             </li>
             <li>
-                BLAAB
+                <a clas="nav-link" href="">Properties</a>
             </li>
             <li>
-                BLAAB
+                <a clas="nav-link" href="">Property value</a>
             </li>
             <li>
-                BLAAB
+                <a clas="nav-link" href="#note">Note the other important parts of the syntax:</a>
             </li>
-            <li>
-                BLAAB
+            <li class="source_alt">
+                <a clas="nav-link" target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS">Source</a>
             </li>
         </ul>  
+
+    <ul id="source">
+        <li>
+            <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS">Source</a>
+        </li>
+    </ul>  
     </nav>
-    <main>
+    <main id="main-doc">
         <h1>CSS: Cascading Style Sheets</h1>
-        <section>
-            <h2>SECTION ONE</h2>
+        <section class="main-section">
+            <header id="What_is_CSS?">What is CSS?</header>
             <p>Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.</p>
             <p>CSS is among the core languages of the open web and is standardized across Web browsers according to W3C specifications. Previously, the development of various parts of CSS specification was done synchronously, which allowed the versioning of the latest recommendations. You might have heard about CSS1, CSS2.1, or even CSS3. There will never be a CSS3 or a CSS4; rather, everything is now CSS without a version number.</p>
             <p>After CSS 2.1, the scope of the specification increased significantly and the progress on different CSS modules started to differ so much, that it became more effective to develop and release recommendations separately per module. Instead of versioning the CSS specification, W3C now periodically takes a snapshot of the latest stable state of the CSS specification and individual modules progress. CSS modules now have version numbers, or levels, such as CSS Color Module Level 5.</p>
         </section>
         
         <section>
-             <h2>Anatomy of a CSS ruleset</h2>
+             <header id="Anatomy_of_CSS_ruleset">Anatomy of a CSS ruleset</header>
             <p>Let's dissect the CSS code for red paragraph text to understand how it works:</p>
 
-            <img src="css-declaration-small.png" alt="CSS p declaration color red in code">
+            <div id="img_container">
+                <img src="css-declaration-small.png" alt="CSS p declaration color red in code">
+            </div>
             <caption> CSS p declaration color red</caption>
             <p>The whole structure is called a ruleset. (The term ruleset is often referred to as just rule.) Note the names of the individual parts:</p>
 
@@ -69,7 +77,7 @@
             <h3>Property value</h3>
             <p>To the right of the property—after the colon—there is the property value. This chooses one out of many possible appearances for a given property. (For example, there are many color values in addition to red.)</p>
 
-            <h3>Note the other important parts of the syntax:</h3>
+            <h3 id="note">Note the other important parts of the syntax:</h3>
 
             <ul>
                 <li>Apart from the selector, each ruleset must be wrapped in curly braces. ({})</li>
@@ -79,13 +87,17 @@
         </section>
         <p>To modify multiple property values in one ruleset, write them separated by semicolons, like this:</p>
 
-<code>
-    p {
+<code id="code">p {
     color: red;
     width: 500px;
     border: 1px solid black;
     }
 </code>
+
+<code></code>
+<code></code>
+<code></code>
+<code></code>
 
 </main>
 

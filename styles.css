@@ -1,14 +1,22 @@
-#nav{
+#navbar{
+    margin: 0;
     position: fixed;
-    min-width: 290px;
+    min-width: 25%;
     top: 0px;
     left: 0px;
-    width: 300px;
-    height: 100%;
+    width: 15%;
+    height: 100vh;
     border-right: solid;
     border-color: rgba(0, 22, 22, 0.4);
+    background-color: #352f44;
+    color: #f3f1f9;
+    padding: 0;
 }
 
+a{
+    color: #dbd8e3;
+    text-decoration: none;
+}
 
 header{
     text-align: center;
@@ -21,6 +29,7 @@ header{
     padding: 0;
     overflow-y: auto;
     overflow-x: hidden;
+    list-style: none;
 }
 
 
@@ -34,15 +43,122 @@ header{
     border-bottom: 1px solid #cac5c5;
 }
 
+.source_alt{
+    display: none;
+}
 
+#source{
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #352f44;
+    display: list-item;
+}
+
+#source li{
+       padding: 5px 0;
+    border-top: 1px solid #cac5c5;
+    text-align: center; 
+}
 
 main {
     position: absolute;
-    margin-left: 310px;
+    margin-left: 25%;
     padding: 20px;
     margin-bottom: 110px;
 }
 
 body{
     font-family: "Goudy Bookletter 1911", sans-serif;
+    color: #352f44;
+    background-color: #d7f1f7;
+    display: flex;
 }
+
+img{
+    width: 80%;
+    height: auto;
+}
+
+#img_container{
+    text-align: center;
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #352f44;
+    color: #e1dddd;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+
+@media only screen and (max-width: 785px) {
+    
+    #source{
+        display: none;
+    }
+
+    .source_alt{
+        display: list-item;
+    }
+
+    #navbar{
+        position: static;
+        top: 0;
+        left: 0;
+        padding: 0;
+        margin: 0;
+        max-height: 200px;
+        border: none;
+        min-width: 320px;
+        z-index: 10;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        max-height: 200px;
+        border: none;
+        min-width: 320px;
+        z-index: 10;
+        position: static;
+        width: 100%;
+        height: auto;
+        height: auto;
+    }
+
+    #navbar a {
+        display: block;
+        padding: 10px 30px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .nav-list{
+        margin: 0;
+        margin-top: 10px;
+        padding-bottom: 0;
+        height: 130px;
+    }
+
+    main {
+        position: absolute;
+        margin-left: 0;
+        margin-top: 60px;
+        padding: 20px;
+        margin-bottom: 50px;
+    }
+
+    .main-section{
+        align-content: center;
+    }
+}
+
+
