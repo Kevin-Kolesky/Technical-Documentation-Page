@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,93 +16,337 @@
         </header>
         <ul class="nav-list">
             <li>
-                <a clas="nav-link" href="">What is CSS?</a>
+                <a class="nav-link" href="#What_is_CSS?">What is CSS?</a>
             </li>
             <li>
-                <a clas="nav-link" href="">Anatomy of a CSS ruleset</a>
+                <a class="nav-link" href="#Anatomy_of_CSS_ruleset">Anatomy of a CSS ruleset</a>
             </li>
             <li>
-                <a clas="nav-link" href="">Selector</a>
+                <a class="nav-link" href="#Fonts_and_text">Fonts and Text</a>
             </li>
             <li>
-                <a clas="nav-link" href="">Declaration</a>
+                <a class="nav-link" href="#CSS:_all_about_boxes">CSS: all about boxes</a>
             </li>
             <li>
-                <a clas="nav-link" href="">Properties</a>
+                <a class="nav-link" href="#Changing_the_page_color">Changing the page color</a>
             </li>
             <li>
-                <a clas="nav-link" href="">Property value</a>
+                <a class="nav-link" href="#Styling_the_body">Styling the body</a>
             </li>
             <li>
-                <a clas="nav-link" href="#note">Note the other important parts of the syntax:</a>
+                <a class="nav-link" href="#Positioning_and_styling_the_main_page_title">Positioning and styling the main page title</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Centering_the_image">Centering the image</a>
             </li>
             <li class="source_alt">
                 <a clas="nav-link" target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS">Source</a>
             </li>
-        </ul>  
+        </ul>
 
-    <ul id="source">
-        <li>
-            <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS">Source</a>
-        </li>
-    </ul>  
+        <ul id="source">
+            <li>
+                <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS">Source</a>
+            </li>
+        </ul>
     </nav>
     <main id="main-doc">
         <h1>CSS: Cascading Style Sheets</h1>
-        <section class="main-section">
-            <header id="What_is_CSS?">What is CSS?</header>
-            <p>Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.</p>
-            <p>CSS is among the core languages of the open web and is standardized across Web browsers according to W3C specifications. Previously, the development of various parts of CSS specification was done synchronously, which allowed the versioning of the latest recommendations. You might have heard about CSS1, CSS2.1, or even CSS3. There will never be a CSS3 or a CSS4; rather, everything is now CSS without a version number.</p>
-            <p>After CSS 2.1, the scope of the specification increased significantly and the progress on different CSS modules started to differ so much, that it became more effective to develop and release recommendations separately per module. Instead of versioning the CSS specification, W3C now periodically takes a snapshot of the latest stable state of the CSS specification and individual modules progress. CSS modules now have version numbers, or levels, such as CSS Color Module Level 5.</p>
+        <section id="What_is_CSS?" class="main-section">
+            <header>What is CSS?</header>
+            <p>Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document
+                written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements
+                should be rendered on screen, on paper, in speech, or on other media.</p>
+            <p>CSS is among the core languages of the open web and is standardized across Web browsers according to W3C
+                specifications. Previously, the development of various parts of CSS specification was done
+                synchronously, which allowed the versioning of the latest recommendations. You might have heard about
+                CSS1, CSS2.1, or even CSS3. There will never be a CSS3 or a CSS4; rather, everything is now CSS without
+                a version number.</p>
+            <p>After CSS 2.1, the scope of the specification increased significantly and the progress on different CSS
+                modules started to differ so much, that it became more effective to develop and release recommendations
+                separately per module. Instead of versioning the CSS specification, W3C now periodically takes a
+                snapshot of the latest stable state of the CSS specification and individual modules progress. CSS
+                modules now have version numbers, or levels, such as CSS Color Module Level 5.</p>
         </section>
-        
-        <section>
-             <header id="Anatomy_of_CSS_ruleset">Anatomy of a CSS ruleset</header>
+
+        <section id="Anatomy_of_CSS_ruleset" class="main-section">
+            <header>Anatomy of a CSS ruleset</header>
             <p>Let's dissect the CSS code for red paragraph text to understand how it works:</p>
 
             <div id="img_container">
-                <img src="css-declaration-small.png" alt="CSS p declaration color red in code">
+                <img src="Assets/css-declaration-small.png" alt="CSS p declaration color red in code">
             </div>
             <caption> CSS p declaration color red</caption>
-            <p>The whole structure is called a ruleset. (The term ruleset is often referred to as just rule.) Note the names of the individual parts:</p>
+            <p>The whole structure is called a ruleset. (The term ruleset is often referred to as just rule.) Note the
+                names of the individual parts:</p>
 
             <h3>Selector</h3>
-            <p>This is the HTML element name at the start of the ruleset. It defines the element(s) to be styled (in this example, <p> elements). To style a different element, change the selector.</p>
+            <p>This is the HTML element name at the start of the ruleset. It defines the element(s) to be styled (in
+                this example,
+            <p> elements). To style a different element, change the selector.</p>
 
             <h3>Declaration</h3>
-            <p>This is a single rule like color: red;. It specifies which of the element's properties you want to style.</p>
+            <p>This is a single rule like color: red;. It specifies which of the element's properties you want to style.
+            </p>
 
             <h3>Properties</h3>
-            <p>These are ways in which you can style an HTML element. (In this example, color is a property of the <p> elements.) In CSS, you choose which properties you want to affect in the rule.</p>
+            <p>These are ways in which you can style an HTML element. (In this example, color is a property of the
+            <p> elements.) In CSS, you choose which properties you want to affect in the rule.</p>
 
             <h3>Property value</h3>
-            <p>To the right of the property—after the colon—there is the property value. This chooses one out of many possible appearances for a given property. (For example, there are many color values in addition to red.)</p>
+            <p>To the right of the property—after the colon—there is the property value. This chooses one out of many
+                possible appearances for a given property. (For example, there are many color values in addition to
+                red.)</p>
 
-            <h3 id="note">Note the other important parts of the syntax:</h3>
+            <h3>Note the other important parts of the syntax:</h3>
 
             <ul>
                 <li>Apart from the selector, each ruleset must be wrapped in curly braces. ({})</li>
-                <li>Within each declaration, you must use a colon (:) to separate the property from its value or values.</li>
-                <li>Within each ruleset, you must use a semicolon (;) to separate each declaration from the next one.</li>
+                <li>Within each declaration, you must use a colon (:) to separate the property from its value or values.
+                </li>
+                <li>Within each ruleset, you must use a semicolon (;) to separate each declaration from the next one.
+                </li>
+            </ul>
+            <p>To modify multiple property values in one ruleset, write them separated by semicolons, like this:</p>
+            <code>p {
+                color: red;
+                width: 500px;
+                border: 1px solid black;
+                }
+            </code>
+        </section>
+
+        <section id="Fonts_and_text" class="main-section">
+            <header>Fonts and text</header>
+            <p>
+                Now that we've explored some CSS fundamentals, let's improve the appearance of the
+                example by adding more rules and information to the style.css file.
+            </p>
+
+
+            <ol>
+                <li>First, find the output from Google Fonts that you previously saved from What will your website look
+                    like?. Add the
+                    <link> element somewhere inside your index.html's head (anywhere between the
+
+                    <head> and </head> tags). It looks something like this:
+                    HTML
+                    <code>&lt;link
+        href="https://fonts.googleapis.com/css?family=Open+Sans"
+        rel="stylesheet" /&gt;
+    </code>
+                    This code links your page to a style sheet that loads the Open Sans font family with your webpage.
+                </li>
+
+
+                <li>
+                    Next, delete the existing rule you have in your style.css file. It was a good test, but let's not
+                    continue with lots of red text.
+                </li>
+
+
+                <li>
+                    Add the following lines (shown below), replacing the font-family assignment with your font-family
+                    selection from What will your website look like?. The property font-family refers to the font(s) you
+                    want to use for text. This rule defines a global base font and font size for the whole page. Since
+                    <html> is the parent element of the whole page, all elements inside it inherit the same font-size
+                    and font-family.
+                </li>
+                <code>html {
+      font-size: 10px; /* px means "pixels": the base font size is now 10 pixels high */
+      font-family: "Open Sans", sans-serif; /* this should be the rest of the output you got from Google Fonts */
+    }
+    </code>
+
+                <li>
+                    Now let's set font sizes for elements that will have text inside the HTML body (&lt;h1&gt;,
+                    &lt;li&gt;, and &lt;p&gt;). We'll also center the heading. Finally, let's expand the second ruleset
+                    (below) with settings for line height and letter spacing to make body content more readable.
+                </li>
+
+                <code>h1 {
+        font-size: 60px;
+        text-align: center;
+        }
+        
+        p,
+        li {
+        font-size: 16px;
+        line-height: 2;
+        letter-spacing: 1px;
+        }
+    </code>
+            </ol>
+            <p>Adjust the px values as you like. Your work-in-progress should look similar to this:</p>
+            <div id="img_container">
+                <img src="Assets/website-screenshot-font-small.png" alt="Image of a basic website">
+            </div>
+        </section>
+
+        <section id="CSS:_all_about_boxes" class="main-section">
+            <header>CSS: all about boxes</header>
+
+            <p>Something you'll notice about writing CSS: a lot of it is about boxes. This includes setting size, color,
+                and position. Most HTML elements on your page can be thought of as boxes sitting on top of other boxes.
+            </p>
+
+            <img src="Assets/boxes.jpg" alt="A big stack of boxes or crates sat on top of one another">
+
+
+            <p>Photo from https://www.geograph.org.uk/photo/3418115 Copyright © Jim Barton cc-by-sa/2.0</p>
+
+            <p>CSS layout is mostly based on the box model. Each box taking up space on your page has properties like:
+            </p>
+
+            <ul>
+                <li>padding, the space around the content. In the example below, it is the space around the paragraph
+                    text.</li>
+                <li>border, the solid line that is just outside the padding.</li>
+                <li>margin, the space around the outside of the border.</li>
+            </ul>
+
+            <img src="Assets/box-model.png"
+                alt=" Three boxes sat inside one another. From outside to in they are labelled margin, border and padding">
+
+            <p>In this section we also use:</p>
+            <ul>
+                <li>width (of an element).</li>
+                <li><strong>background-color</strong>, the color behind an element's content and padding.</li>
+                <li><strong>color</strong>, the color of an element's content (usually text).</li>
+                <li><strong>text-shadow</strong> sets a drop shadow on the text inside an element.</li>
+                <li><strong>display</strong> sets the display mode of an element. (keep reading to learn more)</li>
+            </ul>
+
+
+            <p>To continue, let's add more CSS. Keep adding these new rules at the bottom of <strong>style.css.</strong>
+                Experiment with changing values to see what happens.</p>
+        </section>
+
+        <section id="Changing_the_page_color" class="main-section">
+            <header>Changing the page color</header>
+            <code>html {
+                                                background-color: #00539f;
+                                                }
+                                        </code>
+            <p>This rule sets a background color for the entire page. Change the color code to the color you chose in
+                What will my website look like?.</p>
+        </section>
+
+        <section id="Styling_the_body" class="main-section">
+            <header>Styling the body</header>
+            <code>body {
+                                                width: 600px;
+                                                margin: 0 auto;
+                                                background-color: #ff9500;
+                                                padding: 0 20px 20px 20px;
+                                                border: 5px solid black;
+                                                }
+                                        </code>
+
+            <p>There are several declarations for the &lt;body&gt; element. Let's go through these line-by-line:</p>
+            <ul>
+                <li>
+                    <strong>width: 600px;</strong>
+                    This forces the body to always be 600 pixels wide.
+                </li>
+                <li>
+                    <strong>margin: 0 auto;</strong>
+                    When you set two values on a property like
+                    <strong>margin </strong>
+                    or
+                    <strong>padding, </strong>
+                    the first value affects the element's top and bottom side (setting it to
+                    <strong>0</strong>
+                    in this case); the second value affects the left and right side. (Here,
+                    <strong>auto</strong>
+                    is a special value that divides the available horizontal space evenly between left and right). You
+                    can also use one, two, three, or four values, as documented in Margin Syntax.
+                </li>
+                <li>
+                    <strong>background-color: #FF9500;</strong>
+                    This sets the element's background color. This project uses a reddish orange for the body background
+                    color, as opposed to dark blue for the &lt;html element.&gt; (Feel free to experiment.)
+                </li>
+                <li>
+                    <strong>padding: 0 20px 20px 20px;</strong>
+                    This sets four values for padding. The goal is to put some space around the content. In this
+                    example, there is no padding on the top of the body, and 20 pixels on the right, bottom and left.
+                    The values set top, right, bottom, left, in that order. As with margin, you can use one, two, three,
+                    or four values, as documented in Padding Syntax.
+                </li>
+                <li>
+                    <strong>border: 5px solid black;</strong>
+                    This sets values for the width, style and color of the border. In this case, it's a five-pixel–wide,
+                    solid black border, on all sides of the body.
+                </li>
             </ul>
         </section>
-        <p>To modify multiple property values in one ruleset, write them separated by semicolons, like this:</p>
 
-<code id="code">p {
-    color: red;
-    width: 500px;
-    border: 1px solid black;
-    }
-</code>
+        <section id="Positioning_and_styling_the_main_page_title" class="main-section">
+            <header>Positioning and styling the main page title</header>
 
-<code></code>
-<code></code>
-<code></code>
-<code></code>
+            <code>h1 {
+                                                        margin: 0;
+                                                        padding: 20px 0;
+                                                        color: #00539f;
+                                                        text-shadow: 3px 3px 1px black;
+                                                        }
+                                                    </code>
 
-</main>
+            <p>You may have noticed there's a horrible gap at the top of the body. That happens because browsers apply
+                default styling to the h1 element (among others). That might seem like a bad idea, but the intent is to
+                provide basic readability for unstyled pages. To eliminate the gap, we overwrite the browser's default
+                styling with the setting
+                <strong>margin: 0;</strong>
+                .
+            </p>
 
+            <p>Next, we set the heading's top and bottom padding to 20 pixels.</p>
+
+            <p>Following that, we set the heading text to be the same color as the HTML background color.</p>
+
+            <p>Finally,
+                <strong>text-shadow</strong>
+                applies a shadow to the text content of the element. Its four values are:
+            </p>
+
+            <ul>
+
+
+
+
+                <li>The first pixel value sets the horizontal offset of the shadow from the text: how far it moves
+                    across.</li>
+                <li>The second pixel value sets the vertical offset of the shadow from the text: how far it moves down.
+                </li>
+                <li>The third pixel value sets the blur radius of the shadow. A larger value produces a more
+                    fuzzy-looking shadow.</li>
+                <li>The fourth value sets the base color of the shadow.</li>
+                <li>Try experimenting with different values to see how it changes the appearance.</li>
+            </ul>
+        </section>
+
+        <section id="Centering_the_image" class="main-section">
+            <header>Centering the image</header>
+            <code>img {
+        display: block;
+        margin: 0 auto;
+        }
+        </code>
+
+            <p>Next, we center the image to make it look better. We could use the
+                <strong>margin: 0 auto</strong>
+                trick again as we did for the body. But there are differences that require an additional setting to make
+                the CSS work.
+            </p>
+
+            The
+            <strong>&lt;body&gt;</strong>
+            is a block element, meaning it takes up space on the page. The margin applied to a block element will be
+            respected by other elements on the page. In contrast, images are inline elements, for the auto margin trick
+            to work on this image, we must give it block-level behavior using display: block;.
+        </section>
+    </main>
 </body>
+
 </html>
-
-

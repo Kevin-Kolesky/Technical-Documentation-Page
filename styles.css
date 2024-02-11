@@ -1,3 +1,59 @@
+a{
+    color: #dbd8e3;
+    text-decoration: none;
+}
+
+h1{
+    text-align: center;
+    font-size: 2rem;
+}
+
+main {
+    position: absolute;
+    margin-left: 25%;
+    padding: 20px;
+    margin-bottom: 110px;
+}
+
+body{
+    font-family: "Goudy Bookletter 1911", sans-serif;
+    color: #352f44;
+    background-color: #00a0ff0d;
+    display: flex;
+}
+
+img{
+    width: 80%;
+    height: auto;
+}
+
+#img_container{
+    text-align: center;
+}
+
+header{
+    font-weight: bold;
+    font-size: 1.7em;
+    text-align: center;
+    padding-top: 15px;
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #352f44;
+    color: #e1dddd;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+/* Navbar Styling */
 #navbar{
     margin: 0;
     position: fixed;
@@ -8,20 +64,9 @@
     height: 100vh;
     border-right: solid;
     border-color: rgba(0, 22, 22, 0.4);
-    background-color: #352f44;
+    background-color: #002244;
     color: #f3f1f9;
     padding: 0;
-}
-
-a{
-    color: #dbd8e3;
-    text-decoration: none;
-}
-
-header{
-    text-align: center;
-    padding-top: 15px;
-    font-weight: 500;
 }
 
 .nav-list {
@@ -31,7 +76,6 @@ header{
     overflow-x: hidden;
     list-style: none;
 }
-
 
 .nav-list li{
     padding: 5px 0;
@@ -51,8 +95,9 @@ header{
     padding: 0;
     overflow-y: auto;
     overflow-x: hidden;
-    background-color: #352f44;
+    background-color: #002244;
     display: list-item;
+    height: 4%;
 }
 
 #source li{
@@ -60,45 +105,6 @@ header{
     border-top: 1px solid #cac5c5;
     text-align: center; 
 }
-
-main {
-    position: absolute;
-    margin-left: 25%;
-    padding: 20px;
-    margin-bottom: 110px;
-}
-
-body{
-    font-family: "Goudy Bookletter 1911", sans-serif;
-    color: #352f44;
-    background-color: #d7f1f7;
-    display: flex;
-}
-
-img{
-    width: 80%;
-    height: auto;
-}
-
-#img_container{
-    text-align: center;
-}
-
-code {
-    display: block;
-    text-align: left;
-    white-space: pre-line;
-    position: relative;
-    word-break: normal;
-    word-wrap: normal;
-    line-height: 2;
-    background-color: #352f44;
-    color: #e1dddd;
-    padding: 15px;
-    margin: 10px;
-    border-radius: 5px;
-}
-
 
 @media only screen and (max-width: 785px) {
     
@@ -151,7 +157,7 @@ code {
     main {
         position: absolute;
         margin-left: 0;
-        margin-top: 60px;
+        margin-top: 185px;
         padding: 20px;
         margin-bottom: 50px;
     }
