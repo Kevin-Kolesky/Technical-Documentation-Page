@@ -20,6 +20,7 @@ body {
     color: #352f44;
     background-color: #00a0ff0d;
     display: flex;
+    margin: 0;
 }
 
 img {
@@ -118,26 +119,13 @@ code {
     }
 
     #navbar {
-        position: static;
-        top: 0;
-        left: 0;
         padding: 0;
         margin: 0;
-        max-height: 200px;
         border: none;
-        min-width: 320px;
-        z-index: 10;
-        width: 100%;
-        height: auto;
-        padding: 0;
-        margin: 0;
-        max-height: 200px;
-        border: none;
-        min-width: 320px;
+        min-width: 390px;
         z-index: 10;
         position: static;
         width: 100%;
-        height: auto;
         height: auto;
     }
 
@@ -161,9 +149,20 @@ code {
         margin-top: 185px;
         padding: 20px;
         margin-bottom: 50px;
+        width: calc(100vw - 40px);
     }
 
     .main-section {
         align-content: center;
+    }
+}
+
+@media only screen and (max-height: 1100px) {
+    #source{
+        display: none;
+    }
+
+    .source_alt{
+        display: list-item;
     }
 }
