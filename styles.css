@@ -1,9 +1,9 @@
-a{
+a {
     color: #dbd8e3;
     text-decoration: none;
 }
 
-h1{
+h1 {
     text-align: center;
     font-size: 2rem;
 }
@@ -15,23 +15,24 @@ main {
     margin-bottom: 110px;
 }
 
-body{
+body {
     font-family: "Goudy Bookletter 1911", sans-serif;
     color: #352f44;
     background-color: #00a0ff0d;
     display: flex;
 }
 
-img{
+img {
     width: 80%;
     height: auto;
+    max-width: 800px;
 }
 
-#img_container{
+#img_container {
     text-align: center;
 }
 
-header{
+header {
     font-weight: bold;
     font-size: 1.7em;
     text-align: center;
@@ -54,7 +55,7 @@ code {
 }
 
 /* Navbar Styling */
-#navbar{
+#navbar {
     margin: 0;
     position: fixed;
     min-width: 25%;
@@ -77,21 +78,21 @@ code {
     list-style: none;
 }
 
-.nav-list li{
+.nav-list li {
     padding: 5px 0;
     border-top: 1px solid #cac5c5;
     text-align: center;
 }
 
-.nav-list li:last-of-type{
+.nav-list li:last-of-type {
     border-bottom: 1px solid #cac5c5;
 }
 
-.source_alt{
+.source_alt {
     display: none;
 }
 
-#source{
+#source {
     padding: 0;
     overflow-y: auto;
     overflow-x: hidden;
@@ -100,23 +101,23 @@ code {
     height: 4%;
 }
 
-#source li{
-       padding: 5px 0;
+#source li {
+    padding: 5px 0;
     border-top: 1px solid #cac5c5;
-    text-align: center; 
+    text-align: center;
 }
 
 @media only screen and (max-width: 785px) {
-    
-    #source{
+
+    #source {
         display: none;
     }
 
-    .source_alt{
+    .source_alt {
         display: list-item;
     }
 
-    #navbar{
+    #navbar {
         position: static;
         top: 0;
         left: 0;
@@ -147,7 +148,7 @@ code {
         cursor: pointer;
     }
 
-    .nav-list{
+    .nav-list {
         margin: 0;
         margin-top: 10px;
         padding-bottom: 0;
@@ -162,9 +163,7 @@ code {
         margin-bottom: 50px;
     }
 
-    .main-section{
+    .main-section {
         align-content: center;
     }
 }
-
-
